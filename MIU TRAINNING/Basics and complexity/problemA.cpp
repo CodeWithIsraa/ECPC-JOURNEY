@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;
+
+    while (t--)
+    {
+        string s;
+        cin >> s;
+
+        int count_a = 0;
+        int count_b = 0;
+
+        for (int i = 0; i < 5; i++)
+        {
+            if (s[i] == 'A')
+            {
+                count_a++;
+            }
+            else
+            {
+                count_b++;
+            }
+        }
+        if (count_a > count_b)
+        {
+            cout << 'A';
+        }
+        else
+        {
+            cout << 'B';
+        }
+    }
+}
